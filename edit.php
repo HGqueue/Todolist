@@ -20,9 +20,9 @@ $data = mysqli_fetch_assoc($sql);
         <form action="update.php" method="POST">
             <h1 class="text-center my-4 py-2">TODO LIST</h1>
             <label for="title">Update task</label>
-            <input type="text" name="task" value="<?php echo $data['task'];?>" class="form-control" require placeholder="Add Your Task">
-            <button type="submit"  name="btn-submit" class="btn btn-success my-2">UPDATE</button>
+            <input type="text" name="task" value="<?php echo $data['task'];?>" class="form-control" require placeholder="Add Your Task">            
             <input type="hidden" name="id" id="id" value="<?php echo $id?>">
+            <button type="submit"  name="btn-submit" class="btn btn-success my-2">UPDATE</button>
         </form>
     </div>
 </body>
