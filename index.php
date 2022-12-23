@@ -44,8 +44,8 @@
                             <!-- <td scope="row" ><?php echo $row['id'];?></td> -->
                             <td scope="row" ><?php echo $row['task'];?></td>
                             <td>
-                                <a href="<?php echo "edit.php?id=" . $row['id']; ?>" class="btn btn-primary btn-sm">Edit</a>
-                                <a href="<?php echo "delete.php?id=" . $row['id']; ?>" class="btn btn-primary btn-sm">Delete</a>                                
+                                <a href="<?php echo "edit.php?id=" . $row['id']; ?>" class="btn btn-primary btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <a href="<?php echo "delete.php?id=" . $row['id']; ?>" class="btn btn-primary btn-sm"><i class="fa-solid fa-trash-can"></i></a>                                
                             </td>
                             </tr>
                             <?php                                                       

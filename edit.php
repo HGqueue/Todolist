@@ -10,7 +10,7 @@
 </head>
 <?php
 include"dbconn.php";
-$id =$_POST['id'];
+$id =$_GET['id'];
 $sql = mysqli_query($conn,"SELECT*FROM tasks WHERE id=$id");
 $data = mysqli_fetch_assoc($sql);
 
@@ -22,7 +22,7 @@ $data = mysqli_fetch_assoc($sql);
             <label for="title">Update task</label>
             <input type="text" name="task" value="<?php echo $data['task'];?>" class="form-control" require placeholder="Add Your Task">
             <button type="submit"  name="btn-submit" class="btn btn-success my-2">UPDATE</button>
-            <input type="hidden" name="id" id="id" value="<?php global $id; echo $id?>">
+            <input type="hidden" name="id" id="id" value="<?php echo $id?>">
         </form>
     </div>
 </body>
